@@ -1,0 +1,155 @@
+{
+    "cafeteria":[
+        {
+            "name":"CAFÉ",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.70€",
+            "content":""
+        },
+        {
+            "name":"DESCAFEINADO",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.75€",
+            "content":""
+        },
+        {
+            "name":"CAFÉ DUPLO",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "1.30€",
+            "content":""
+        },
+        {
+            "name":"Abatanado",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.85€",
+            "content":""
+        },
+        {
+            "name":"Meia de leite café",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.95€",
+            "content":"Café simples"
+        },
+        {
+            "name":"Meia de leite carioca",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.90€",
+            "content":"Café simples descafeinado"
+        },
+        {
+            "name":"Meia de leite descafeinado",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "1.00€",
+            "content":"Meia de leite descafeinado"
+        },
+        {
+            "name":"Meia de leite cevada",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.90€",
+            "content":"Meia de leite cevada"
+        },
+        {
+            "name":"Pingo café",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.80€",
+            "content":"Pingo café"
+        },
+        {
+            "name":"Pingo carioca",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.70€",
+            "content":"Pingo carioca"
+        },
+        {
+            "name":"Pingo descafeinado",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.80€",
+            "content":"Pingo descafeinado"
+        },
+        {
+            "name":"Galão",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.95€",
+            "content":"Galão"
+        },
+        {
+            "name":"Galão carioca",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.90€",
+            "content":"Galão carioca"
+        },
+        {
+            "name":"Galão descafeinado",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "1.00€",
+            "content":"Galão descafeinado"
+        },
+        {
+            "name":"Cevada pequena",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.65€",
+            "content":"Cevada pequena"
+        },
+        {
+            "name":"Cevada dupla",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "1.20€",
+            "content":"Cevada dupla"
+        },
+        {
+            "name":"Carioca de limão pequeno",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.60€",
+            "content":"Carioca de limão pequeno"
+        },
+        {
+            "name":"Carioca de limão duplo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.80€",
+            "content":"Carioca de limão duplo"
+        },
+        {
+            "name":"Cappuccino",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "1.35€",
+            "content":"Cappuccino"
+        },
+        {
+            "name":"Cappuccino c/ natas",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "1.55€",
+            "content":"Cappuccino c/ natas"
+        },
+        {
+            "name":"Pingo café",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.80€",
+            "content":"Pingo café"
+        },
+        {
+            "name":"Chocolate quente",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "1.80€",
+            "content":"Chocolate quente"
+        },
+        {
+            "name":"Chocolate quente c/ natas",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "2.00€",
+            "content":"Chocolate quente c/ natas"
+        },
+        {
+            "name":"Chá bule",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "0.90€",
+            "content":"Chá bule"
+        },
+        {
+            "name":"Chá bule (2 pessoas)",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Cafeteria/cafe_I08U8HnjF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661521858677",
+            "price": "1.15€",
+            "content":"Chá bule (2 pessoas)"
+        }
+
+    ]
+}

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+
+.tela-login
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #ffc400;
+    z-index: 100;
+
+    .frm-login
+    {
+        position: relative;
+        
+        .circle
+        {
+            position: absolute;
+            top: -50px;
+            width: 130px;
+            height: 130px;
+            background: #FFC400;
+            box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+        }
+    }
+
+    h2 
+    {
+        top: 200px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 173px;
+        height: 33px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 136.02%;
+        letter-spacing: 0.07em;
+        color: #FFC400;
+        text-shadow: 0px 4px 4px #FFC400;
+    }
+
+    .frm-login
+    {
+        width: 350px;
+        height: 500px;
+        background: #FFFFFF;
+        box-shadow: 0px 11px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .inputbox 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .inputbox input
+    {
+        width: 100%;
+        padding: 15px;
+        border: solid 1px rgba(255, 196, 0,0.25);
+        border-radius: 8px;
+        outline: none;
+        font-size: 1.2rem;
+    }
+
+    .inputbox span 
+    {
+        position: absolute;
+        left: 35px;
+        pointer-events: none;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: rgba(255, 196, 0,0.5);
+        transition: 0.5s;
+    }
+
+    .inputbox input:valid ~ span,
+    .inputbox input:focus ~ span 
+    {
+        color: #ffc400;
+        transform: translateX(5px) translateY(-30px);
+        font-size: 0.8rem;
+        background: #FFFFFF;
+        padding: 2px 5px;
+        border-left: 1px solid #ffc400;
+        border-right: 1px solid #ffc400;
+    }
+
+    .inputbox input:valid,
+    .inputbox input:focus 
+    {
+        border: solid 1px #ffc400;
+        color: #c79903;
+        box-shadow: 0px 11px 5px rgba(255, 196, 0, 0.24);
+    }
+
+    button 
+    {
+        width: 111px;
+        height: 30px;
+        background: #FFC400;
+        box-shadow: 0px 4px 4px #FFC400;
+        border-radius: 8px;
+        border: none;
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-weight: 500;
+
+        &:hover
+        {
+            color: #FFC400;
+            background: #FFFFFF;
+        }
+    }
+}

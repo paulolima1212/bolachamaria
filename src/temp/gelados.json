@@ -1,0 +1,29 @@
+{
+    "gelados": 
+    [
+        {
+            "name":"MAGNUM 44",
+            "src": "src/image/gelados/magnum.webp",
+            "price": "5€",
+            "content":""
+        },
+        {
+            "name":"CORNETTO",
+            "src": "src/image/gelados/cornetto.webp",
+            "price": "5€",
+            "content":""
+        },
+        {
+            "name":"SOLERO",
+            "src": "src/image/gelados/solero.svg",
+            "price": "5€",
+            "content":""
+        },
+        {
+            "name":"CALIPPO",
+            "src": "src/image/gelados/calippo.png",
+            "price": "5€",
+            "content":""
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "cafe":
+    [
+        {
+            "name":"CAFÉ EXPRESSO",
+            "src": "src/image/cafe/cafe.png",
+            "price": "5€",
+            "content":""
+        },
+        {
+            "name":"CAFÉ PINGADO",
+            "src": "src/image/cafe/pingado.png",
+            "price": "5€",
+            "content":""
+        },
+        {
+            "name":"CAFÉ CHEIO",
+            "src": "src/image/cafe/cafe.png",
+            "price": "5€",
+            "content":""
+        }
+    ]
+}

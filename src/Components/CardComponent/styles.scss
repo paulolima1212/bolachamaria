@@ -1,0 +1,122 @@
+.card 
+{
+    position: relative;
+    width: 320px;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: perspective(320px) rotateY(0deg);
+    filter: drop-shadow(0px 4px 7px rgba(255, 255, 255, 0.47));
+    
+    .face 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 600px;
+        transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.8s ease-in-out;
+        backface-visibility: hidden;
+    }
+
+    .face.face1
+    {
+        overflow: hidden;
+        
+        img 
+        {
+            border-radius: 15px;
+            width: 320px;
+            height: 600px;
+            object-fit: cover;
+        }
+    }
+
+    .face.face1::before
+    {
+        content: attr(data-text);
+        position: absolute;
+        top: 210px;
+        left: 10px;
+        padding-top: 20px;
+        width: 300px;
+        height: 58px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 136.02%;
+        text-align: center;
+        letter-spacing: 0.24em;
+        color: #FFFFFF;
+        text-shadow: 0px 5.94872px 5.94872px rgba(230, 0, 0, 0.54);
+        backdrop-filter: blur(13.3846px);
+        border-radius: 15px;
+
+    }
+
+    &:hover .face.face1 
+    {
+        transform: perspective(320px) rotateY(180deg);
+    }
+
+    .face.face2 
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        overflow: scroll;
+        transform: perspective(320px) rotateY(180deg);
+
+        .card-title 
+        {
+            position: absolute;
+            top: 0;
+            display: flex;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 136%;
+            text-align: center;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            
+            h3 
+            {
+                padding-top: 7px;
+                width: 213px;
+                height: 34px;
+                background: #FFC400;
+                color: #fff;
+                font-weight: 800;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 6px;
+            }
+        }
+    }
+    
+    &:hover .face.face2 
+    {
+        transform: perspective(320px) rotateY(360deg);
+    }
+}
+
+.itemcard 
+{
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+}
+

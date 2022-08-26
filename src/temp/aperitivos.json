@@ -1,0 +1,28 @@
+{
+    "aperitivos":[
+        {
+            "name":"MOELA",
+            "src": "src/image/aperitivos/moela.webp",
+            "price": "5€",
+            "content":"Moela de frango ao molho especial da casa, incrivelmente saborosa."
+        },
+        {
+            "name":"HAMBURGUER",
+            "src": "src/image/aperitivos/burger.jpg",
+            "price": "5€",
+            "content":"Pão, hamburguer, queijo, salada"
+        },
+        {
+            "name":"BATATA FRITA",
+            "src": "src/image/aperitivos/fries.jpg",
+            "price": "5€",
+            "content":"Batata frita, ketchup e maionese"
+        },
+        {
+            "name":"HOT-DOG",
+            "src": "src/image/aperitivos/cachorro.jpg",
+            "price": "5€",
+            "content":"Prensado com molho especial"
+        }
+    ]
+}

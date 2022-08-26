@@ -1,0 +1,140 @@
+.modal  
+{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    justify-content: center;
+
+    .frame-modal 
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        height: 600px;
+        width: 300px;
+        background: #F3F3F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+
+        input 
+        {
+            position: absolute;
+            left: 180px;
+            top: 550px;
+            width: 109px;
+            height: 27px;
+            background: #FFC400;
+            border-radius: 6px;
+            color: #fff;
+        }
+    }
+
+    img 
+    {
+        position: relative;
+        margin-top: 75px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .desc-modal 
+    {
+        position: relative;
+        align-items: center;
+        margin: 20px 20px;
+        height: 45%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.615px;
+        line-height: 19px;
+        letter-spacing: 0.07em;
+
+    }
+    
+    .line-separator
+    {
+        content: '';
+        width: 230px;
+        margin-top: 20px;
+        height: 0px;
+        border: 2px dashed #FFC400;
+        border-style: inset;
+    }
+}
+
+.title-modal
+{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    padding: 5px;
+    width: 213px;
+    height: auto;
+    margin-bottom: 20px;
+    background: #FFC400;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.pedido
+{
+    position: absolute;
+    width: 203px;
+    height: 93px;
+    left: 50px;
+    top: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    button 
+    {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 60px;
+        background: #FFC400;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+    }
+
+    span
+    {
+        padding: 15px;
+    }
+
+    .button-pedido
+    {
+        position: absolute;
+        width: 109px;
+        height: 27px;
+        top: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        background: #D9D9D9;
+        border-radius: 6px;
+        background: #FFC400;
+        border: none;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+    }
+
+    button:hover
+    {
+        background: #795e05;
+        color: #fff;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+    }
+
+}

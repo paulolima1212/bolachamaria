@@ -1,0 +1,41 @@
+{
+    "torradaspaoforma":
+    [
+        {
+            "name":"Torrada",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torradas_Forma/torradas_2Pc1ru8WR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661597773777",
+            "price": "1.20",
+            "content":""
+        },
+        {
+            "name":"Torrada aparada",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torradas_Forma/torradas_2Pc1ru8WR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661597773777",
+            "price": "1.30",
+            "content":""
+        },
+        {
+            "name":"½ torrada",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torradas_Forma/torradas_2Pc1ru8WR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661597773777",
+            "price": "0.65",
+            "content":""
+        },
+        {
+            "name":"½ torrada aparada",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torradas_Forma/torradas_2Pc1ru8WR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661597773777",
+            "price": "0.70",
+            "content":""
+        },
+        {
+            "name":"Tosta mista",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torradas_Forma/tostamistaforma_OjUmpuF9q.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661597773614",
+            "price": "2.10",
+            "content":""
+        },
+        {
+            "name":"Tosta queijo ou fiambre",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torradas_Forma/tostamistaforma_OjUmpuF9q.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661597773614",
+            "price": "1.60",
+            "content":""
+        }
+    ]
+}

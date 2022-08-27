@@ -1,0 +1,44 @@
+{
+    "torradaspaorustico":[
+        {
+            "name":"Torrada",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.90",
+            "content":""
+        },{
+            "name":"½ torrada",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.00",
+            "content":""
+        },
+        {
+            "name":"Torrada especial",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "2.50",
+            "content":""
+        },
+        {
+            "name":"Tosta mista Pão rústico",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "2.90",
+            "content":""
+        },{
+            "name":"½ tosta mista pão rústico",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.45",
+            "content":""
+        },
+        {
+            "name":"Tosta Q/F Pão rústico",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "2.35",
+            "content":""
+        },
+        {
+            "name":"Extra acompanhamento",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.50",
+            "content":""
+        }
+    ]
+}

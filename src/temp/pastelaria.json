@@ -1,0 +1,88 @@
+{
+    "pastelaria": 
+    [
+        {
+            "name":"Bola de Berlim",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.00",
+            "content":""
+        },
+        {
+            "name":"Croissant simples",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.00",
+            "content":""
+        },
+        {
+            "name":"Croissant c/ queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.60",
+            "content":""
+        },
+        {
+            "name":"Croissant c/ fiambre",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.60",
+            "content":""
+        },{
+            "name":"Croissant c/ manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.25",
+            "content":""
+        },
+        {
+            "name":"Croissant misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "2.05",
+            "content":""
+        },
+        {
+            "name":"Croissant creme",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.20",
+            "content":""
+        },
+        {
+            "name":"Croissant de chocolate",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.30",
+            "content":""
+        },
+        {
+            "name":"Pastel de nata",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.95",
+            "content":""
+        },
+        {
+            "name":"Pastel nata c/recheio",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.05",
+            "content":""
+        },
+        {
+            "name":"Bico de pato/ Pão de leite",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.35",
+            "content":""
+        },
+        {
+            "name":"Bico de pato/ Pão de leite c/ manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.80",
+            "content":""
+        },
+        {
+            "name":"Bico de pato/ Pão de leite c/ queijo/ fiambre",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.10",
+            "content":""
+        },
+        {
+            "name":"Bico de pato/ Pão de leite misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.40",
+            "content":""
+        }
+    ]
+}

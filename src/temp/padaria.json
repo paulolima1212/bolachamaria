@@ -1,0 +1,202 @@
+{
+    "padaria":[
+        {
+            "name":"Pão Biju Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.60",
+            "content":""
+        },
+        {
+            "name":"Pão Biju Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.00",
+            "content":""
+        },
+        {
+            "name":"Pão Biju Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.50",
+            "content":""
+        },
+        {
+            "name":"Pão de Centeio Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.65",
+            "content":""
+        },
+        {
+            "name":"Pão de Centeio Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.10",
+            "content":""
+        },
+        {
+            "name":"Pão de Centeio Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.55",
+            "content":""
+        },
+        {
+            "name":"Pão de Água Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.75",
+            "content":""
+        },
+        {
+            "name":"Pão de Água Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.25",
+            "content":""
+        },
+        {
+            "name":"Pão de Água Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.65",
+            "content":""
+        },
+        {
+            "name":"Integral / Bica Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.75",
+            "content":""
+        },
+        {
+            "name":"Integral / Bica Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.25",
+            "content":""
+        },
+        {
+            "name":"Integral / Bica Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.65",
+            "content":""
+        },
+        {
+            "name":"Pão Tigre Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.80",
+            "content":""
+        },
+        {
+            "name":"Pão Tigre Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.30",
+            "content":""
+        },
+        {
+            "name":"Pão Tigre Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.70",
+            "content":""
+        },
+        {
+            "name":"Pão Tigre Simples",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.35",
+            "content":""
+        },
+        {
+            "name":"Cereais/ Alfarroba Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.85",
+            "content":""
+        },
+        {
+            "name":"Cereais/ Alfarroba Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.35",
+            "content":""
+        },
+        {
+            "name":"Cereais/ Alfarroba Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.80",
+            "content":""
+        },
+        {
+            "name":"Baguete Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.85",
+            "content":""
+        },
+        {
+            "name":"Baguete Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.35",
+            "content":""
+        },
+        {
+            "name":"Baguete Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.80",
+            "content":""
+        },
+        {
+            "name":"Amanteigado folhado Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.95",
+            "content":""
+        },
+        {
+            "name":"Amanteigado folhado Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.35",
+            "content":""
+        },
+        {
+            "name":"Amanteigado folhado Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.80",
+            "content":""
+        },
+        {
+            "name":"Amanteigado folhado Simples",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.60",
+            "content":""
+        },
+        {
+            "name":"Passas/ Passas e nozes Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.90",
+            "content":""
+        },
+        {
+            "name":"Passas/ Passas e nozes Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.30",
+            "content":""
+        },
+        {
+            "name":"Passas/ Passas e nozes Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.75",
+            "content":""
+        },
+        {
+            "name":"Passas/ Passas e nozes Simples",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.60",
+            "content":""
+        },
+        {
+            "name":"Chia Manteiga",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.90",
+            "content":""
+        },
+        {
+            "name":"Chia Queijo",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.40",
+            "content":""
+        },
+        {
+            "name":"Chia Misto",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.85",
+            "content":""
+        }
+    ]
+}

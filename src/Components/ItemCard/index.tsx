@@ -28,7 +28,7 @@ export default function ItemCard({src, name, price, alt, content}: ItemCardProps
         <div className="drink-face2">
             <img src={src} alt={alt} />
             <span className="name-item" onClick={() => handleChangeModal()}>{name}</span>
-            <span className="price-item">{price}</span>
+            <span className="price-item">{price}€</span>
         </div>
     )
 }

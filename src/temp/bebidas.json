@@ -1,0 +1,52 @@
+{
+    "bebidas":[
+        {
+            "name":"Sumo natural de laranja",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Bebidas/sucolaranja_EKk6633_y.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661596786707",
+            "price": "2.30",
+            "content":""
+        },
+        {
+            "name":"Compal",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Bebidas/compal-removebg-preview_rdseYuCIM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661596266067",
+            "price": "1.25",
+            "content":""
+        },
+        {
+            "name":"Refrigerantes",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Bebidas/Refrigerante_lata_3qHX0-LYj-removebg-preview_TvKrcR_1T.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661596476356",
+            "price": "1.40",
+            "content":""
+        },
+        {
+            "name":"Água s/ gás 0,5L",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Bebidas/agua-mineral-natural-sem-gas-luso-33cl-pack-24-unidades-removebg-preview_ftJffvjFw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661596670602",
+            "price": "0.80",
+            "content":""
+        },
+        {
+            "name":"Água s/ gás 1L",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Bebidas/agua-mineral-natural-sem-gas-luso-15l-pack-12-unidades-removebg-preview_Ltne1psvI.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661596670991",
+            "price": "1.10",
+            "content":""
+        },
+        {
+            "name":"Água c/ gás Pedras",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Bebidas/agua-removebg-preview_mvMrmPi39X.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661596266146",
+            "price": "1.10",
+            "content":""
+        },
+        {
+            "name":"Água c/ gás sabores Pedras",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Bebidas/716133-removebg-preview_lQzM19MVy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661596671077",
+            "price": "1.20",
+            "content":""
+        },
+        {
+            "name":"Pleno",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Bebidas/pleno-removebg-preview_W8M6hVC25.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661596266236",
+            "price": "1.40",
+            "content":""
+        }
+    ]
+}

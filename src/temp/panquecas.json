@@ -1,0 +1,34 @@
+{
+    "panquecas":[
+        {
+            "name":"Panquecas simples (3 un.)",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "2.50",
+            "content":""
+        },
+        {
+            "name":"Panquecas recheadas",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "5.25",
+            "content":""
+        },
+        {
+            "name":"Panquecas c/ 3 acomp.",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "4.80",
+            "content":""
+        },
+        {
+            "name":"Extra acompanhamento",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "0.50",
+            "content":""
+        },
+        {
+            "name":"Extra fruta",
+            "src": "https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/Torrada_Rustica/genericfood_7J2TjD2am.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661599262338",
+            "price": "1.00",
+            "content":""
+        }
+    ]
+}

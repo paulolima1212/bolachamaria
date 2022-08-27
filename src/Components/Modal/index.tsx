@@ -27,12 +27,6 @@ export default function Modal() {
     return (
         <div className="modal">
             <div className="frame-modal">
-                {modalConfirmacao && <ModalConfirmaPedido 
-                    item={modalContent.title}
-                    qtd={pedido}
-                    mesa={'5'}
-                    client='Paulo'  
-                    />}
                 <h3 className="title-modal">{modalContent.title}</h3>
                 <img src={modalContent.src} alt="drink-pinacolada" />
                 <div className="line-separator"></div>

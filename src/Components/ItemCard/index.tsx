@@ -21,7 +21,8 @@ export default function ItemCard({src, name, price, alt, content}: ItemCardProps
         setModalContent({
             title: name,
             content: content,
-            src: src
+            src: src,
+            price: price
         })
     }
     return (

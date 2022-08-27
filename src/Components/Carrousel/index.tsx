@@ -19,8 +19,6 @@ export default function Carrousel() {
             spaceBetween={5}
             slidesPerView={"auto"}
             centeredSlides={true}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             className="mySwiper"
         >
             <SwiperSlide><CardsRender card={card1} /></SwiperSlide>

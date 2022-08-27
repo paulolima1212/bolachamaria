@@ -2,11 +2,21 @@ import { useState } from "react";
 import { useCardContext } from "../../Context/CardsContext"
 
 import '../Modal/styles.scss'
-import ModalConfirmaPedido from "../ModalConfirmaPedido";
+
+interface PedidoProps{
+    pedido:[
+        {
+            title: string,
+            src: string,
+            content: {}
+            qtd: number
+        }
+    ]
+}
 
 export default function Modal() {
 
-    const {setModalVisible, modalContent, modalConfirmacao, setModalConfirmacao}:any = useCardContext()
+    const {setModalVisible, modalContent}:any = useCardContext()
     const [pedido, setPedido] = useState(0);
 
     function handleAumentarPedido(){
@@ -20,8 +30,32 @@ export default function Modal() {
         setModalVisible(false)
     }
 
-    function handleOpenModalConfirmacao() {
-        setModalConfirmacao(true)
+    function handlePedido() {
+        const novoPedido = {
+            title: modalContent.title,
+            src: modalContent.src,
+            qtd: pedido,
+            price: modalContent.price * pedido
+        }
+        const pedidos:any = localStorage.getItem('pedido')
+        if(pedidos){
+            const listaItems = JSON.parse(pedidos)
+            console.log(listaItems);
+            listaItems.items.push(novoPedido)
+            console.log(listaItems);
+            localStorage.setItem('pedido', JSON.stringify(listaItems))
+        }else{
+            const criarPedido = {
+                items:[
+                    {
+                        title: modalContent.title,
+                        src: modalContent.src,
+                        qtd: pedido,
+                        price: modalContent.price * pedido
+                    }
+                ]}
+                localStorage.setItem('pedido', JSON.stringify(criarPedido))
+            }
     }
 
     return (
@@ -37,7 +71,7 @@ export default function Modal() {
                         <span>{pedido}</span>
                         <button onClick={handleAumentarPedido}>+</button>
                     </div>
-                    <button onClick={handleOpenModalConfirmacao} className="button-pedido">Pedido</button>
+                    <button onClick={handlePedido} className="button-pedido">Pedido</button>
                 </div>
                 <input type="button" value="Close" onClick={() => handleCloseModal()} />
             </div>

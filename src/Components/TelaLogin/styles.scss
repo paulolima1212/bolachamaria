@@ -119,6 +119,11 @@
         font-size: 1rem;
         font-weight: 500;
 
+        &:nth-child(2)
+        {
+            margin-left: 25px;
+        }
+
         &:hover
         {
             color: #FFC400;

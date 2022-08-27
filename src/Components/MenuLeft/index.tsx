@@ -3,35 +3,34 @@ import { FaRegHandPaper } from 'react-icons/Fa'
 import { AiOutlineLogout } from 'react-icons/Ai'
 import { GiReceiveMoney, GiRoundTable } from 'react-icons/Gi'
 import { useCardContext } from '../../Context/CardsContext'
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 
 import '../MenuLeft/styles.scss'
 
 export default function MenuLeft() {
 
-    const {setTelaLoginVisible}:any = useCardContext()
+    const {setTelaLoginVisible, setClient, client}:any = useCardContext()
 
-    const handleLogin = useCallback(() => {
+    function handleLogin(){
         setTelaLoginVisible(true)
-    }, [])
+    }
 
     function handleCallWeiter(){
         alert('O garçon foi chamado.')
     }
-    
+
     return (
         <div className="menu-left">
             <div className="header-menu">
-                
                 <div className="identifier">
                     <div>
                         <BsPerson size='1em' color='#fff' />
-                        <span>Paulo</span>
+                        <span id='client-menu'>{client.client}</span>
                     </div>
                     <div className='line-separator-menuheader'></div>
                     <div>
                         <GiRoundTable color='#fff'/>
-                        <span>N 05</span>
+                        <span id='table-menu'>Nº {client.table}</span>
                     </div>
                 </div>
             </div>

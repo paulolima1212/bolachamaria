@@ -13,7 +13,8 @@ interface ModalProps{
     'modalContent':{
         title: string,
         content: string,
-        src: string
+        src: string,
+        price: number
     }
 }
 
@@ -25,6 +26,7 @@ export function CardContextProvider({children}: {children: JSX.Element}) {
     const [telaLoginVisible, setTelaLoginVisible] = useState(false);
     const [modalConfirmacao, setModalConfirmacao] = useState(false);
     const [modalContent, setModalContent] = useState({});
+    const [client, setClient] = useState({client: '', table: ''});
 
     return(
         <div>
@@ -36,7 +38,9 @@ export function CardContextProvider({children}: {children: JSX.Element}) {
                         telaLoginVisible, 
                         setTelaLoginVisible,
                         setModalConfirmacao,
-                        modalConfirmacao}
+                        modalConfirmacao,
+                        client,
+                        setClient}
             }>
                 {children}
             </CardContext.Provider>

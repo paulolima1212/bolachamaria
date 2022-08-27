@@ -1,14 +1,28 @@
-import { useCallback } from 'react'
+import { useCallback, useRef } from 'react'
 import { useCardContext } from '../../Context/CardsContext'
 import { FaUserCircle } from 'react-icons/Fa'
 
 import '../TelaLogin/styles.scss'
 
 export default function TelaLogin() {
-    const {setTelaLoginVisible}:any = useCardContext()
+
+    const {setTelaLoginVisible, client, setClient}:any = useCardContext()
+
+    const inputClient = useRef<any>()
+    const inputTable  = useRef<any>()
+    
+    const handleCloseRegister = useCallback(() => {
+        setTelaLoginVisible(false)
+    }, []);
 
     const handleRegistrarMesa = useCallback(() => {
+        const user = {
+            client: inputClient.current.value,
+            table: inputTable.current.value
+        }
+        localStorage.setItem('client', JSON.stringify(user))
         setTelaLoginVisible(false)
+        setClient(user)
     }, [])
     
     return (
@@ -19,14 +33,15 @@ export default function TelaLogin() {
                 </div>
                 <h2>Identificação</h2>
                 <div className="inputbox">
-                    <input type="text" required />
+                    <input ref={inputClient} id='client-login' type="text" required />
                     <span>client</span>
                 </div>
                 <div className="inputbox">
-                    <input type="text" required />
+                    <input ref={inputTable} id='table-login' type="text" required />
                     <span>mesa</span>
                 </div>
                 <div>
+                    <button onClick={handleCloseRegister}>Fechar</button>
                     <button onClick={handleRegistrarMesa}>Confirmar</button>
                 </div>
             </form>

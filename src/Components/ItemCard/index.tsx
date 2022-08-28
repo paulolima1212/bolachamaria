@@ -7,7 +7,7 @@ interface ItemCardProps {
     src: string
     alt: string
     name: string
-    price: number
+    price: string
     content: string
 }
 

@@ -7,13 +7,12 @@ import '../Header/styles.scss'
 export default function Header() {
 
     const {setClient, setModalTelaPedido, modalTelaPedido, client,setTelaLoginVisible}:any = useCardContext()
-
-    function handleTelaPedido() {
-        {client.client ? setModalTelaPedido(!modalTelaPedido): setTelaLoginVisible(true)}
-    }
-
+    
     const activeClient = JSON.parse(localStorage.getItem('client'))
 
+    function handleTelaPedido() {
+        {activeClient.client ? setModalTelaPedido(!modalTelaPedido): setTelaLoginVisible(true)}
+    }
 
     function setItems(){
         var items: number | string

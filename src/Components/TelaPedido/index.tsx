@@ -3,6 +3,7 @@ import { ClientProps, items } from "../../Interfaces/Interfaces"
 import Footer from "../Footer"
 import Header from "../Header"
 import ItemCard from "../ItemCard"
+import {api} from '../../services/api'
 
 import '../TelaPedido/styles.scss'
 
@@ -15,9 +16,12 @@ export default function TelaPedido() {
     })
 
     function handleSendOrder() {
+        console.log(activeClient);
+        api.post('/', activeClient)
         activeClient.items = []
         localStorage.setItem('client', JSON.stringify(activeClient))
         alert('Pedido enviado. Obrigado.')
+        location.reload()
     }
 
     return (

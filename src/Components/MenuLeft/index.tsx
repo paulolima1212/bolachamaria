@@ -3,7 +3,6 @@ import { FaRegHandPaper } from 'react-icons/Fa'
 import { AiOutlineLogout } from 'react-icons/Ai'
 import { GiReceiveMoney, GiRoundTable } from 'react-icons/Gi'
 import { useCardContext } from '../../Context/CardsContext'
-import { useCallback, useEffect } from 'react'
 
 import '../MenuLeft/styles.scss'
 
@@ -17,6 +16,11 @@ export default function MenuLeft() {
 
     function handleCallWeiter(){
         alert('O garçon foi chamado.')
+    }
+
+    function handleLogOut(){
+        localStorage.removeItem('client')
+        location.reload()
     }
 
     return (
@@ -53,7 +57,7 @@ export default function MenuLeft() {
                         Pagamento
                     </a>
                 </div>
-                <div className="logouttable">
+                <div className="logouttable" onClick={handleLogOut}>
                     <AiOutlineLogout size='2em' color='#fff' />
                     <a href="#">
                         Sair

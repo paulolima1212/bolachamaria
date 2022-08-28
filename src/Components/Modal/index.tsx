@@ -31,12 +31,14 @@ export default function Modal() {
         
         const activeClient = JSON.parse(localStorage.getItem('client'))
 
-        if(activeClient.client){
+        if(activeClient){
             activeClient.items.push(novoPedido)
             localStorage.setItem('client', JSON.stringify(activeClient))
+            setModalVisible(false)
         }else{
             setTelaLoginVisible(true)
         }
+
     }
 
     return (

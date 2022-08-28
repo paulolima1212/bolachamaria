@@ -21,9 +21,11 @@ export default function TelaLogin() {
             table: inputTable.current.value,
             items: []
         }
-        localStorage.setItem('client', JSON.stringify(user))
-        setTelaLoginVisible(false)
-        setClient(user)
+        if(user.client && user.table){
+            localStorage.setItem('client', JSON.stringify(user))
+            setTelaLoginVisible(false)
+            setClient(user)
+        }
     }, [])
     
     return (

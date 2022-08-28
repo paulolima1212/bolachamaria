@@ -2,6 +2,7 @@ import ItemCard from "../ItemCard"
 import { v4 as uuid } from "uuid";
 
 import '../CardComponent/styles.scss'
+import { CardComponentProps } from "../../Interfaces/Interfaces";
 
 interface ContextProps{
     setModalVisible: (boolean: boolean) => {};
@@ -9,8 +10,7 @@ interface ContextProps{
     setModalTitle: (string: string) => string;
 }
 
-export default function CardComponent({card}: any) {
-
+export default function CardComponent({card}: {card:CardComponentProps}) {
     return (
         <div className="card">
             <div className="face face1" data-text={card.alt} >
@@ -21,7 +21,7 @@ export default function CardComponent({card}: any) {
                     <h3 >{card.title}</h3>
                 </div>
                 <div className="itemcard">
-                    {card.items.map((item: any) => {
+                    {card.items?.map((item: any) => {
                         return <ItemCard 
                                     name={item.name}
                                     src={item.src} 

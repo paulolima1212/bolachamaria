@@ -18,7 +18,8 @@ export default function TelaLogin() {
     const handleRegistrarMesa = useCallback(() => {
         const user = {
             client: inputClient.current.value,
-            table: inputTable.current.value
+            table: inputTable.current.value,
+            items: []
         }
         localStorage.setItem('client', JSON.stringify(user))
         setTelaLoginVisible(false)

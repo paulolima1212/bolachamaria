@@ -31,8 +31,8 @@ export const card3:CardComponentProps = {
     title: 'TORRADAS E TOSTAS',
     src: 'https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/ImageCards/torradapaodeforma_oGpRHus6G.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661594725946',
     alt: 'TORRADAS E TOSTAS',
-    subTitle: 'PÃO DE FORMA',
-    items: torradaspaoforma
+    items: torradaspaoforma,
+    subTitle: 'PÃO DE FORMA'
     
 }
 

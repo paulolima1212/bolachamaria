@@ -11,15 +11,17 @@ export interface CardProps{
     }
 }
 
+interface items {
+    name: string
+    src: string
+    price: string
+    content: string
+}
+
 export interface CardComponentProps{
     title: string
     src: string
     alt: string
-    items:[
-        {
-            name: string
-            src: string
-            price: string
-        }
-    ]
+    subTitle?: string,
+    items: items[]
 }

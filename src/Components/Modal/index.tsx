@@ -10,6 +10,7 @@ interface PedidoProps{
             src: string,
             content: {}
             qtd: number
+            price: number
         }
     ]
 }

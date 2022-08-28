@@ -7,7 +7,7 @@ import TelaLogin from "../TelaLogin";
 
 export default function Modal() {
 
-    const {setModalVisible, modalContent, setTelaLoginVisible}:{modalContent:items} = useCardContext()
+    const {setModalVisible, modalContent, setTelaLoginVisible,telaLoginVisible}:{modalContent:items} = useCardContext()
     const [pedido, setPedido] = useState(0);
 
     function handleAumentarPedido(){
@@ -29,14 +29,11 @@ export default function Modal() {
             price: modalContent.price * pedido
         }
         
-        const pedidos = localStorage.getItem('client')
+        const activeClient = JSON.parse(localStorage.getItem('client'))
 
-        if(pedidos){
-            const listaItems:ClientProps = JSON.parse(pedidos)
-            console.log(listaItems);
-            listaItems.items.push(novoPedido)
-            console.log(listaItems);
-            localStorage.setItem('client', JSON.stringify(listaItems))
+        if(activeClient.client){
+            activeClient.items.push(novoPedido)
+            localStorage.setItem('client', JSON.stringify(activeClient))
         }else{
             setTelaLoginVisible(true)
         }

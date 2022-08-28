@@ -1,21 +1,13 @@
 import { createContext, useContext, useState } from "react";
+import { items } from "../Interfaces/Interfaces";
 
 interface CardContextTypes {
     setModalVisible: () => boolean
     modalVisible: boolean
     setModalContent: () => void
     setModalTitle: () => void
-    modalContent: string
+    modalContent: items
     modalTitle: string
-}
-
-interface ModalProps{
-    'modalContent':{
-        title: string,
-        content: string,
-        src: string,
-        price: number
-    }
 }
 
 const CardContext = createContext<CardContextTypes | {}>({});
@@ -24,7 +16,7 @@ export function CardContextProvider({children}: {children: JSX.Element}) {
     
     const [modalVisible, setModalVisible] = useState(false);
     const [telaLoginVisible, setTelaLoginVisible] = useState(false);
-    const [modalConfirmacao, setModalConfirmacao] = useState(false);
+    const [modalTelaPedido, setModalTelaPedido] = useState(false);
     const [modalContent, setModalContent] = useState({});
     const [client, setClient] = useState({client: '', table: ''});
 
@@ -37,8 +29,8 @@ export function CardContextProvider({children}: {children: JSX.Element}) {
                         modalContent, 
                         telaLoginVisible, 
                         setTelaLoginVisible,
-                        setModalConfirmacao,
-                        modalConfirmacao,
+                        setModalTelaPedido,
+                        modalTelaPedido,
                         client,
                         setClient}
             }>

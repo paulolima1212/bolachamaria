@@ -1,11 +1,19 @@
 import { useCallback } from "react"
 import { useCardContext } from "../../Context/CardsContext"
+import { BsCart3 } from "react-icons/bs";
 
 import '../Header/styles.scss'
 
 export default function Header() {
 
-    const {setClient}:any = useCardContext()
+    const {setClient, setModalTelaPedido, modalTelaPedido, client,setTelaLoginVisible}:any = useCardContext()
+
+    function handleTelaPedido() {
+        {client.client ? setModalTelaPedido(!modalTelaPedido): setTelaLoginVisible(true)}
+    }
+
+    const activeClient = JSON.parse(localStorage.getItem('client'))
+    const items:number = activeClient.items.length
 
     const handleOpenMenu = useCallback(() => {
         const menuleft = document.querySelector('.menu-left')
@@ -19,6 +27,9 @@ export default function Header() {
         <div className="header">
             <div className="menutoggle" onClick={handleOpenMenu}></div>
             <img src="" alt="logo" className="logoimage"/>
+            <div className="cartorder" data-text={items > 0 ? items : ''}>
+                <BsCart3 size='2em' onClick={handleTelaPedido} />
+            </div>
         </div>
     )
 }

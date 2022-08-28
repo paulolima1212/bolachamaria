@@ -1,23 +1,13 @@
 import { useState } from "react";
 import { useCardContext } from "../../Context/CardsContext"
+import { ClientProps, items } from "../../Interfaces/Interfaces";
 
 import '../Modal/styles.scss'
-
-interface PedidoProps{
-    pedido:[
-        {
-            title: string,
-            src: string,
-            content: {}
-            qtd: number
-            price: number
-        }
-    ]
-}
+import TelaLogin from "../TelaLogin";
 
 export default function Modal() {
 
-    const {setModalVisible, modalContent}:any = useCardContext()
+    const {setModalVisible, modalContent, setTelaLoginVisible}:{modalContent:items} = useCardContext()
     const [pedido, setPedido] = useState(0);
 
     function handleAumentarPedido(){
@@ -33,39 +23,32 @@ export default function Modal() {
 
     function handlePedido() {
         const novoPedido = {
-            title: modalContent.title,
+            name: modalContent.name,
             src: modalContent.src,
             qtd: pedido,
             price: modalContent.price * pedido
         }
-        const pedidos:any = localStorage.getItem('pedido')
+        
+        const pedidos = localStorage.getItem('client')
+
         if(pedidos){
-            const listaItems = JSON.parse(pedidos)
+            const listaItems:ClientProps = JSON.parse(pedidos)
             console.log(listaItems);
             listaItems.items.push(novoPedido)
             console.log(listaItems);
-            localStorage.setItem('pedido', JSON.stringify(listaItems))
+            localStorage.setItem('client', JSON.stringify(listaItems))
         }else{
-            const criarPedido = {
-                items:[
-                    {
-                        title: modalContent.title,
-                        src: modalContent.src,
-                        qtd: pedido,
-                        price: modalContent.price * pedido
-                    }
-                ]}
-                localStorage.setItem('pedido', JSON.stringify(criarPedido))
-            }
+            setTelaLoginVisible(true)
+        }
     }
 
     return (
         <div className="modal">
             <div className="frame-modal">
-                <h3 className="title-modal">{modalContent.title}</h3>
+                <h3 className="title-modal">{modalContent.name}</h3>
                 <img src={modalContent.src} alt="drink-pinacolada" />
                 <div className="line-separator"></div>
-                <p className="desc-modal">{modalContent.content ? modalContent.content : modalContent.title}</p>
+                <p className="desc-modal">{modalContent.content ? modalContent.content : modalContent.name}</p>
                 <div className="pedido">
                     <div>
                         <button onClick={handleDiminuirPedido}>-</button>

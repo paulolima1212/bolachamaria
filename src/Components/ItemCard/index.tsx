@@ -7,7 +7,7 @@ interface ItemCardProps {
     src: string
     alt: string
     name: string
-    price: string
+    price: number
     content: string
 }
 
@@ -19,7 +19,7 @@ export default function ItemCard({src, name, price, alt, content}: ItemCardProps
         window.scrollTo(0,0)
         setModalVisible(true)
         setModalContent({
-            title: name,
+            name: name,
             content: content,
             src: src,
             price: price

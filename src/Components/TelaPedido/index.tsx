@@ -1,3 +1,5 @@
+import { useCardContext } from "../../Context/CardsContext"
+import { ClientProps, items } from "../../Interfaces/Interfaces"
 import Footer from "../Footer"
 import Header from "../Header"
 import ItemCard from "../ItemCard"
@@ -6,8 +8,17 @@ import '../TelaPedido/styles.scss'
 
 export default function TelaPedido() {
 
-    const activeClient = JSON.parse(localStorage.getItem('client'))
-    const listaItems = JSON.parse(localStorage.getItem('pedido'))
+    let toPay = 0
+    const activeClient:ClientProps = JSON.parse(localStorage.getItem('client'))
+    const total = activeClient.items?.map((item) => {
+        toPay = toPay + item.price
+    })
+
+    function handleSendOrder() {
+        activeClient.items = []
+        localStorage.setItem('client', JSON.stringify(activeClient))
+        alert('Pedido enviado. Obrigado.')
+    }
 
     return (
         <div className="tela-pedido">
@@ -21,14 +32,14 @@ export default function TelaPedido() {
                     <span className="table-number">{activeClient.table}</span>
                 </div>
                 <div className="content-items">
-                    {listaItems.items.map((item:any) => {
-                        return <ItemCard key={Math.random()} src="" alt="item" name={item.title} price={item.price} />
+                    {activeClient.items?.map((item) => {
+                        return <ItemCard key={Math.random()} src={item.src} alt="item" name={item.name} price={item.price.toFixed(2)} content='' />
                     })}
                 </div>
                 <div className="total-payment">
                     <span>Total a pagar:</span>
-                    <span>{155.25}€</span>
-                    <button>Confirmar pedido</button>
+                    <span>{toPay.toFixed(2)}€</span>
+                    <button onClick={handleSendOrder}>Confirmar pedido</button>
                 </div>
             </div>
             <Footer />

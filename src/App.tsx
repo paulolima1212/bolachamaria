@@ -10,11 +10,11 @@ import { useCardContext } from "./Context/CardsContext";
 import "swiper/css/pagination";
 export default function App() {
 
-  const {modalVisible, telaLoginVisible}: any = useCardContext()
+  const {modalVisible, telaLoginVisible, modalTelaPedido}: any = useCardContext()
 
   return (
     <div className="main">
-      {/* <TelaPedido /> */}
+      {modalTelaPedido && <TelaPedido />}
       {telaLoginVisible && <TelaLogin />}
       <MenuLeft />
       <Header />

@@ -25,12 +25,12 @@ export default function MenuLeft() {
                 <div className="identifier">
                     <div>
                         <BsPerson size='1em' color='#fff' />
-                        <span id='client-menu'>{client.client}</span>
+                        <span id='client-menu'>{client?.client}</span>
                     </div>
                     <div className='line-separator-menuheader'></div>
                     <div>
                         <GiRoundTable color='#fff'/>
-                        <span id='table-menu'>Nº {client.table}</span>
+                        <span id='table-menu'>Nº {client?.table}</span>
                     </div>
                 </div>
             </div>

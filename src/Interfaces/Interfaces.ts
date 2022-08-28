@@ -7,15 +7,16 @@ export interface CardProps{
         src: string,
         description: string,
         alt:string,
-        price: string
+        price: number
     }
 }
 
-interface items {
+export interface items {
     name: string
     src: string
-    price: string
-    content: string
+    price: number
+    content?: string
+    qtd?: number
 }
 
 export interface CardComponentProps{
@@ -24,4 +25,10 @@ export interface CardComponentProps{
     alt: string
     subTitle?: string,
     items: items[]
+}
+
+export interface ClientProps{
+    client: string,
+    table: string,
+    items: items[] 
 }

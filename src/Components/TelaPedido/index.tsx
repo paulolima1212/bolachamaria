@@ -23,13 +23,10 @@ export default function TelaPedido() {
         location.reload()
     }
 
-    function handleAumentarPedido(e: Event){
-        // console.log(e.target.id);
+    function handleDeleteItem(id: string){
+        console.log(id);
     }
-    
-    function handleDiminuirPedido(e: Event){
-        // console.log(e.target.id)
-    }
+
 
     return (
         <div className="tela-pedido">
@@ -48,7 +45,7 @@ export default function TelaPedido() {
                             <div>
                                 <ItemCard  key={item.id} src={item.src} alt="item" name={item.name} price={item.price.toFixed(2)} content='' />
                                 <span className="qtd">{item.qtd}</span>
-                                <div className="button-trash">
+                                <div className="button-trash" onClick={() => handleDeleteItem(item.id)}>
                                     {IconTrash}
                                 </div>
                             </div>

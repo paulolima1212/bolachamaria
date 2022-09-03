@@ -28,9 +28,9 @@ export const card2:CardComponentProps = {
 
 export const card3:CardComponentProps = {
 
-    title: 'TORRADAS E TOSTAS',
+    title: 'TORRADAS E TOSTAS (FORMA)',
     src: 'https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/ImageCards/torradapaodeforma_oGpRHus6G.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661594725946',
-    alt: 'TORRADAS E TOSTAS',
+    alt: 'TORRADAS E TOSTAS (FORMA)',
     items: torradaspaoforma,
     subTitle: 'PÃO DE FORMA'
     
@@ -38,9 +38,9 @@ export const card3:CardComponentProps = {
 
 export const card4:CardComponentProps = {
 
-    title: 'TORRADAS E TOSTAS',
+    title: 'TORRADAS E TOSTAS (RÚSTICA)',
     src: 'https://ik.imagekit.io/plima1212/Bolacha_Maria/Cards/ImageCards/torradapaorustico_Xu8JsK1wA.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1661594725577',
-    alt: 'TORRADAS E TOSTAS',
+    alt: 'TORRADAS E TOSTAS (RÚSTICA)',
     subTitle: 'PÃO RÚSTICO',
     items: torradaspaorustico
     

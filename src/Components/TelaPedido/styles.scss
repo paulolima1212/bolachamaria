@@ -227,14 +227,6 @@
         align-items: center;
     }
 
-    .qtd
-    {
-        position: absolute;
-        right: 115px;
-        top: 27px;
-        font-size: 2rem;
-    }
-
     .main-pedido
     {
         position: relative;
@@ -372,40 +364,12 @@
                 overflow: hidden;
             }
 
-            button:nth-child(4)
+            .qtd
             {
                 position: absolute;
-                right: 55px;
-                margin-top: 25px;
-                width: 15px;
-                height: 20px;
-                border-radius: 30%;
-                border: none;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                background: #D5BC01;
-                &:hover
-                {
-                    background: #81630196;
-                    color: #fff;
-                }
-            }
-
-            button:nth-child(2)
-            {
-                position: absolute;
-                right: 10px;
-                margin-top: 25px;
-                width: 15px;
-                height: 20px;
-                border-radius: 30%;
-                border: none;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                background: #D5BC01;
-                &:hover
-                {
-                    background: #81630196;
-                    color: #fff;
-                }
+                font-size: 2.5rem;
+                right: 100px;
+                top: 21px;
             }
 
             p
@@ -487,14 +451,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .qtd
-    {
-        position: absolute;
-        right: 115px;
-        top: 10px;
-        font-size: 1.5rem;
     }
 
     .main-pedido
@@ -648,6 +604,16 @@
                 height: 25px;
                 width: 25px;
             }
+
+            .qtd
+            {
+                position: absolute;
+                right: 115px;
+                top: 10px;
+                font-size: 1.5rem;
+            }
+        
+
         }
 
         .total-payment 

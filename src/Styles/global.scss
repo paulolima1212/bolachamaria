@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto';
 }
 
 body
@@ -13,7 +15,7 @@ body
     align-items: center;
     min-height: 100vh;
     min-width: 100%;
-    background: #FFC400;
+    background: #D5BC01;
 }
 
 #root
@@ -34,11 +36,123 @@ body
 {
     position: relative;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+}
+
+.container
+{
+    position: relative;
+    width: 95%;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 0px;
+    transition: 0.5s;
+
+    .face.face2.active
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        overflow: scroll;
+        overflow-x: hidden;
+        transition: 0.5s;
+        border-radius: 15px;
+
+        // transform: perspective(320px) rotateY(180deg);
+        // visibility: hidden;
+
+        .toggle-face
+        {
+            position: absolute;
+            display: flex;
+            right: 15px;
+            width: 60px;
+            height: 60px;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 100;
+            margin-left: 5px;
+        
+            &::before
+            {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: #D5BC01;
+                transform: translateY(-10px);
+                transition: 0.5s;
+            }
+        
+            &::after
+            {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: #D5BC01;
+                transform: translateY(10px);
+                transition: 0.5s;
+                box-shadow: 0 -10px #D5BC01;
+            }
+
+            &::before
+            {
+                transform: translateY(0px) rotate(45deg);
+            }
+
+            &::after
+            {
+                transform: translateY(0px) rotate(-45deg);
+                box-shadow: 0 0px #fff;
+            }
+        }
+
+        .card-title
+        {
+            position: relative;
+            top: 0;
+            display: flex;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.6rem;
+            line-height: 136%;
+            text-align: center;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            margin-top: 10px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            
+            h3 
+            {
+                width: 213px;
+                height: 34px;
+                background: #FFC400;
+                color: #fff;
+                font-weight: 800;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 6px;
+            }
+        }
+    }
 }
 
 .swiper {
@@ -69,5 +183,188 @@ body
     align-items: center;
 }
 
+@media (max-width:330px) {
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-width: 100%;
+        background: #D5BC01;
+    }
+
+    #root
+    {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .principal
+    {
+        position: relative;
+        display: flex;
+    }
+
+    .main
+    {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .container
+    {
+        position: relative;
+        width: 95%;
+        min-height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        overflow: hidden;
+        gap: 0px;
+        transition: 0.5s;
+
+        .face.face2.active
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            flex-direction: column;
+            overflow: scroll;
+            overflow-x: hidden;
+            transition: 0.5s;
+            border-radius: 15px;
+
+            // transform: perspective(320px) rotateY(180deg);
+            // visibility: hidden;
+
+            .toggle-face
+            {
+                position: absolute;
+                right: -5px;
+                display: flex;
+                width: 60px;
+                height: 60px;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0 20px;
+                z-index: 100;
+            
+                &::before
+                {
+                    position: absolute;
+                    content: '';
+                    width: 30px;
+                    height: 3px;
+                    background: #D5BC01;
+                    transform: translateY(-10px);
+                    transition: 0.5s;
+                }
+            
+                &::after
+                {
+                    position: absolute;
+                    content: '';
+                    width: 30px;
+                    height: 3px;
+                    background: #D5BC01;
+                    transform: translateY(10px);
+                    transition: 0.5s;
+                    box-shadow: 0 -10px #D5BC01;
+                }
+
+                &::before
+                {
+                    transform: translateY(0px) rotate(45deg);
+                }
+
+                &::after
+                {
+                    transform: translateY(0px) rotate(-45deg);
+                    box-shadow: 0 0px #fff;
+                }
+            }
+
+            .card-title
+            {
+                position: relative;
+                top: 0;
+                display: flex;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.6rem;
+                line-height: 136%;
+                text-align: center;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+                margin-top: 10px;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                
+                h3 
+                {
+                    padding-top: 7px;
+                    width: 213px;
+                    height: 34px;
+                    background: #FFC400;
+                    color: #fff;
+                    font-weight: 800;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+    }
+
+    .mySwiper
+    {
+        margin-bottom: 10px;
+        gap: 5px;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+}
 

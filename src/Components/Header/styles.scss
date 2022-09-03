@@ -8,46 +8,57 @@
     height: 10vh;
     justify-content: space-around;
     align-items: center;
-    background: #FFC400;
+    background: linear-gradient(90deg, rgba(255, 255, 0, 0.510989) 0%, 
+                                            rgba(255, 215, 0, 0.85) 22.81%, 
+                                            rgba(255, 215, 0, 0.510989) 42.41%, 
+                                            rgba(255, 215, 0, 0.6) 63.79%, 
+                                            rgba(255, 215, 0, 0) 84.15%, #FFD700 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #fff;
     margin-bottom: 15px;
 
     img 
     {
+        width: 70%;
+        height: 100%;
+    }
+
+}
+
+.cartorder
+{
+    position: relative; 
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    svg
+    {
         width: 60px;
         height: 60px;
     }
 
-    svg
+    &::after
     {
+        content: attr(data-text);
         position: absolute;
-        left: 350px;
-        top: 20px;
+        right: 25px;
+        font-size: 2rem;
+        top: 5px;
+        color: red;
     }
-}
-
-.cartorder::after
-{
-    position: absolute;
-    left: 380px;
-    top: 5px;
-    justify-content: center;
-    align-items: center;
-    content: attr(data-text);
-    border-radius: 50%;
-    color: red;
-
 }
 
 .menutoggle
 {
-    position: absolute;
+    position: relative;
+    margin-left: 10px;
     display: flex;
-    top: 10px;
-    left: 15px;
-    width: 60px;
-    height: 60px;
+    width: 15%;
+    height: 100%;
     justify-content: flex-start;
     align-items: center;
     padding: 0 20px;
@@ -74,5 +85,189 @@
         transform: translateY(10px);
         transition: 0.5s;
         box-shadow: 0 -10px #fff;
+    }
+}
+
+@media (max-width:420px) {
+    .header
+    {
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10vh;
+        justify-content: space-around;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(255, 255, 0, 0.510989) 0%, 
+                                            rgba(255, 215, 0, 0.85) 22.81%, 
+                                            rgba(255, 215, 0, 0.510989) 42.41%, 
+                                            rgba(255, 215, 0, 0.6) 63.79%, 
+                                            rgba(255, 215, 0, 0) 84.15%, #FFD700 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        margin-bottom: 15px;
+
+        img 
+        {
+            width: 50%;
+            height: 100%;
+        }
+
+    }
+
+    .cartorder
+    {
+        position: relative; 
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+
+        svg
+        {
+            width: 50px;
+            height: 50px;
+        }
+
+        &::after
+        {
+            content: attr(data-text);
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: red;
+        }
+    }
+
+    .menutoggle
+    {
+        position: relative;
+        margin-left: -5px;
+        display: flex;
+        width: 25%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 100;
+
+        &::before
+        {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+
+        &::after
+        {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            transform: translateY(10px);
+            transition: 0.5s;
+            box-shadow: 0 -10px #fff;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .header
+    {
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10vh;
+        justify-content: space-around;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(255, 255, 0, 0.510989) 0%, 
+                                            rgba(255, 215, 0, 0.85) 22.81%, 
+                                            rgba(255, 215, 0, 0.510989) 42.41%, 
+                                            rgba(255, 215, 0, 0.6) 63.79%, 
+                                            rgba(255, 215, 0, 0) 84.15%, #FFD700 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        margin-bottom: 15px;
+
+        img 
+        {
+            width: 50%;
+            height: 100%;
+        }
+
+    }
+
+    .cartorder
+    {
+        position: relative; 
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+
+        svg
+        {
+            width: 35px;
+            height: 35px;
+        }
+
+        &::after
+        {
+            content: attr(data-text);
+            position: absolute;
+            right: 5px;
+            font-size: 1.3rem;
+            top: 5px;
+            color: red;
+        }
+    }
+
+    .menutoggle
+    {
+        position: relative;
+        margin-left: -5px;
+        display: flex;
+        width: 25%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 100;
+
+        &::before
+        {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+
+        &::after
+        {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            transform: translateY(10px);
+            transition: 0.5s;
+            box-shadow: 0 -10px #fff;
+        }
     }
 }

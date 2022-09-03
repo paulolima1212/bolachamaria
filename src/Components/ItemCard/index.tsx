@@ -2,16 +2,16 @@ import { useCardContext } from "../../Context/CardsContext"
 
 import '../ItemCard/styles.scss'
 
-
 interface ItemCardProps {
     src: string
     alt: string
     name: string
     price: string
     content: string
+    id?:string
 }
 
-export default function ItemCard({src, name, price, alt, content}: ItemCardProps) {
+export default function ItemCard({src, name, price, alt, content, id}: ItemCardProps) {
 
     const {setModalVisible, setModalContent}:any = useCardContext()
 
@@ -26,7 +26,7 @@ export default function ItemCard({src, name, price, alt, content}: ItemCardProps
         })
     }
     return (
-        <div className="drink-face2">
+        <div id={id} className="drink-face2">
             <img src={src} alt={alt} />
             <span className="name-item" onClick={() => handleChangeModal()}>{name}</span>
             <span className="price-item">{price}€</span>

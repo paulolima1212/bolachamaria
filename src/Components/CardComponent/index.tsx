@@ -11,12 +11,28 @@ interface ContextProps{
 }
 
 export default function CardComponent({card}: {card:CardComponentProps}) {
+
+    function handleChangeContainer(){
+        const face2 = document.querySelector('.face.face2')
+        face2?.classList.add('active')
+        const faceAdd = document.querySelector('.face.face2.active')
+        document.querySelector('.container')?.appendChild(faceAdd)
+    }
+
+    function handleToggleFace(){
+        const face2 = document.querySelector('.face.face2.active')
+        face2?.classList.remove('active')
+        const container = document.querySelector('.container')
+        container?.removeChild(face2)
+    }
+
     return (
         <div className="card">
-            <div className="face face1" data-text={card.alt} >
+            <div className="face face1" data-text={card.alt} onClick={handleChangeContainer} >
                 <img src={card.src} alt={card.alt}  />
             </div>
             <div className="face face2">
+                <div className="toggle-face" onClick={handleToggleFace}></div>
                 <div className="card-title">
                     <h3 >{card.title}</h3>
                 </div>

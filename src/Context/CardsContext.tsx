@@ -19,7 +19,8 @@ export function CardContextProvider({children}: {children: JSX.Element}) {
     const [modalTelaPedido, setModalTelaPedido] = useState(false);
     const [modalContent, setModalContent] = useState({});
     const [client, setClient] = useState({client: '', table: ''});
-
+    const [show, setShow] = useState(false);
+    
     return(
         <div>
             <CardContext.Provider value={
@@ -32,6 +33,8 @@ export function CardContextProvider({children}: {children: JSX.Element}) {
                         setModalTelaPedido,
                         modalTelaPedido,
                         client,
+                        show,
+                        setShow,
                         setClient}
             }>
                 {children}

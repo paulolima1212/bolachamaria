@@ -4,6 +4,7 @@
     display: flex;
     height: 100vh;
     width: 100%;
+    margin-bottom: 50px;
     background: rgba(255, 255, 255, 0.15);
     justify-content: center;
 
@@ -14,11 +15,11 @@
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
-        height: 600px;
-        width: 300px;
+        height: 80%;
+        width: 85%;
         background: #F3F3F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 16px;    
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        border-radius: 16px;   
 
         input 
         {
@@ -27,7 +28,7 @@
             top: 550px;
             width: 109px;
             height: 27px;
-            background: #FFC400;
+            background: #D5BC01;
             border-radius: 6px;
             color: #fff;
         }
@@ -36,9 +37,9 @@
     img 
     {
         position: relative;
-        margin-top: 75px;
-        width: 150px;
-        height: 150px;
+        margin-top: 20px;
+        width: 30%;
+        height: 25%;
     }
 
     .desc-modal 
@@ -47,51 +48,97 @@
         align-items: center;
         margin: 20px 20px;
         height: 45%;
-        font-family: 'Inter';
+        width: 85%;
+        font-family: "Inter";
         font-style: normal;
         font-weight: 400;
-        font-size: 13.615px;
+        font-size: 3rem;
         line-height: 19px;
         letter-spacing: 0.07em;
     }
     
     .line-separator
     {
-        content: '';
-        width: 230px;
-        margin-top: 20px;
+        content: "";
+        width: 85%;
+        margin-top: 5px;
         height: 0px;
-        border: 2px dashed #FFC400;
-        border-style: inset;
+        border: 2px solid #D5BC01;
     }
 }
 
 .title-modal
 {
-    position: absolute;
-    top: 15px;
-    left: 50px;
+    position: relative;
+    top: 30px;
     padding: 5px;
-    width: 213px;
+    width: 50%;
     height: auto;
     margin-bottom: 20px;
-    background: #FFC400;
+    background: #D5BC01;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
     align-items: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 6px;
+    font-size: 2.5rem;
+    padding: 5px;
+}
+
+.close-modal
+{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+
+    &::before
+    {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: #D5BC01;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    &::after
+    {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: #D5BC01;
+        transform: translateY(10px);
+        transition: 0.5s;
+        box-shadow: 0 -10px #D5BC01;
+    }
+
+    &::before
+        {
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        &::after
+        {
+            transform: translateY(0px) rotate(-45deg);
+            box-shadow: 0 0px #D5BC01;
+        }
 }
 
 .pedido
 {
-    position: absolute;
-    width: 203px;
-    height: 93px;
-    left: 50px;
-    top: 430px;
+    position: relative;
+    width: 250px;
+    height: 120px;
+    bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,35 +146,36 @@
 
     button 
     {
-        width: 30px;
-        height: 30px;
-        margin-bottom: 60px;
-        background: #FFC400;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 25px;
+        background: #D5BC01;
         border: none;
         border-radius: 8px;
         color: #fff;
         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+        font-size: 3.5rem;
     }
 
     span
     {
-        padding: 15px;
+        padding: 30px;
+        font-size: 3.5rem;
     }
 
     .button-pedido
     {
-        position: absolute;
-        width: 109px;
-        height: 27px;
-        top: 60px;
+        position: relative;
+        width: 150px;
+        height: 100px;
         text-align: center;
         text-transform: uppercase;
-        font-size: 0.8rem;
-        background: #D9D9D9;
+        font-size: 2.5rem;
         border-radius: 6px;
-        background: #FFC400;
+        background: #D5BC01;
         border: none;
         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+        padding: 5px;
     }
 
     button:hover
@@ -137,3 +185,197 @@
         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
     }
 }
+
+@media (max-width:420px) {
+    .modal  
+{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    justify-content: center;
+
+    .frame-modal 
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        height: 70%;
+        width: 85%;
+        background: #F3F3F3;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        border-radius: 16px;   
+
+        input 
+        {
+            position: absolute;
+            left: 180px;
+            top: 550px;
+            width: 109px;
+            height: 27px;
+            background: #D5BC01;
+            border-radius: 6px;
+            color: #fff;
+        }
+    }
+
+    img 
+    {
+        position: relative;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        width: 143px;
+        height: 143px;
+    }
+
+    .desc-modal 
+    {
+        position: relative;
+        align-items: center;
+        margin: 20px 20px;
+        height: 45%;
+        width: 85%;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 19px;
+        letter-spacing: 0.07em;
+    }
+    
+    .line-separator
+    {
+        content: "";
+        width: 85%;
+        margin-top: 5px;
+        height: 0px;
+        border: 2px solid #D5BC01;
+    }
+}
+
+.title-modal
+{
+    position: relative;
+    top: 30px;
+    padding: 5px;
+    width: 65%;
+    height: auto;
+    margin-bottom: 20px;
+    background: #D5BC01;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 6px;
+    font-size: 1.8rem;
+    padding: 5px;
+}
+
+.close-modal
+{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+
+    &::before
+    {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: #D5BC01;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    &::after
+    {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: #D5BC01;
+        transform: translateY(10px);
+        transition: 0.5s;
+        box-shadow: 0 -10px #D5BC01;
+    }
+
+    &::before
+        {
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        &::after
+        {
+            transform: translateY(0px) rotate(-45deg);
+            box-shadow: 0 0px #D5BC01;
+        }
+}
+
+.pedido
+{
+    position: relative;
+    width: 200px;
+    height: 90px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    button 
+    {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+        background: #D5BC01;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+        font-size: 2rem;
+    }
+
+    span
+    {
+        padding: 30px;
+        font-size: 3rem;
+    }
+
+    .button-pedido
+    {
+        position: relative;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        border-radius: 6px;
+        background: #D5BC01;
+        border: none;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+        padding: 3px;
+    }
+
+    button:hover
+    {
+        background: #795e05;
+        color: #fff;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+    }
+}
+
+
+}
+

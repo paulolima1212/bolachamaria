@@ -1,12 +1,19 @@
-import { useCallback } from "react"
+import { useCallback, useEffect, useState } from "react"
+import { IconCarOrder } from "../../assets/icons"
 import { useCardContext } from "../../Context/CardsContext"
-import { BsCart3 } from "react-icons/bs";
 
 import '../Header/styles.scss'
 
 export default function Header() {
 
-    const {setClient, setModalTelaPedido, modalTelaPedido, client,setTelaLoginVisible}:any = useCardContext()
+    const {show, 
+            setShow,
+            setClient, 
+            setModalTelaPedido, 
+            modalTelaPedido, 
+            client,
+            setTelaLoginVisible
+        }:any = useCardContext()
     
     const activeClient = JSON.parse(localStorage.getItem('client'))
 
@@ -24,20 +31,22 @@ export default function Header() {
         return items
     }
 
-    const handleOpenMenu = useCallback(() => {
+    function handleOpenMenu(){
         const menuleft = document.querySelector('.menu-left')
         const menutoggle = document.querySelector('.menutoggle')
         menuleft?.classList.toggle('active')
         menutoggle?.classList.toggle('active')
         const user:any = localStorage.getItem('client')
         setClient(JSON.parse(user))
-    }, [])
+        setShow(!show)
+    }
+
     return (
         <div className="header">
             <div className="menutoggle" onClick={handleOpenMenu}></div>
-            <img src="" alt="logo" className="logoimage"/>
-            <div className="cartorder" data-text={setItems()}>
-                <BsCart3 size='2em' onClick={handleTelaPedido} />
+            <img src="../../assets/user.svg" alt="logo" className="logoimage"/>
+            <div className="cartorder" data-text={setItems()} onClick={handleTelaPedido}>
+                {IconCarOrder}
             </div>
         </div>
     )

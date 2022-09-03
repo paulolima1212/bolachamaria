@@ -1,12 +1,42 @@
 .cards 
 {
     position: relative;
-    width: 100%;
-    height: 600px;
+    width: 33%;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-top: 10px;
+}
+
+@media (max-width:660px) {
+    .cards
+    {
+        position: relative;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:420px) {
+    .cards
+    {
+        position: relative;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
 }

@@ -1,7 +1,4 @@
-import { BsPerson } from 'react-icons/Bs'
-import { FaRegHandPaper } from 'react-icons/Fa'
-import { AiOutlineLogout } from 'react-icons/Ai'
-import { GiReceiveMoney, GiRoundTable } from 'react-icons/Gi'
+import { IconExit, IconMoney, IconUser, IconWaiter } from '../../assets/icons'
 import { useCardContext } from '../../Context/CardsContext'
 
 import '../MenuLeft/styles.scss'
@@ -28,41 +25,21 @@ export default function MenuLeft() {
             <div className="header-menu">
                 <div className="identifier">
                     <div>
-                        <BsPerson size='1em' color='#fff' />
                         <span id='client-menu'>{client?.client}</span>
                     </div>
                     <div className='line-separator-menuheader'></div>
                     <div>
-                        <GiRoundTable color='#fff'/>
                         <span id='table-menu'>Nº {client?.table}</span>
                     </div>
                 </div>
             </div>
             <div className="labels">
-                <div className="identifica" onClick={handleLogin}>
-                    <BsPerson size='2em' color='#fff' />
-                    <a href="#">
-                        Identificação
-                    </a>
-                </div>
-                <div className="garcon">
-                    <FaRegHandPaper size='2em' color='#fff' />
-                    <a href="#">
-                        <span onClick={handleCallWeiter}>chamar garçon</span>
-                    </a>
-                </div>
-                <div className="payment">
-                    <GiReceiveMoney size='2em' color='#fff' />
-                    <a href="#">
-                        Pagamento
-                    </a>
-                </div>
-                <div className="logouttable" onClick={handleLogOut}>
-                    <AiOutlineLogout size='2em' color='#fff' />
-                    <a href="#">
-                        Sair
-                    </a>
-                </div>
+                <ul>
+                    <li onClick={handleLogin}>{IconUser}<a href="#">IDENTIFICAÇÃO</a></li>
+                    <li onClick={handleCallWeiter}>{IconWaiter}<a href="#">CHAMAR GARÇON</a></li>
+                    <li>{IconMoney}<a href="#">PAGAMENTO</a></li>
+                    <li onClick={handleLogOut}>{IconExit}<a href="#">SAIR</a></li>
+                </ul>
             </div>
         </div>
     )

@@ -17,6 +17,7 @@ export interface items {
     price: number
     content?: string
     qtd?: number
+    id?:string
 }
 
 export interface CardComponentProps{
@@ -30,5 +31,6 @@ export interface CardComponentProps{
 export interface ClientProps{
     client: string,
     table: string,
+    qtd: number,
     items: items[] 
 }

@@ -1,6 +1,6 @@
 import { useCallback, useRef } from 'react'
+import { IconUser } from '../../assets/icons'
 import { useCardContext } from '../../Context/CardsContext'
-import { FaUserCircle } from 'react-icons/Fa'
 
 import '../TelaLogin/styles.scss'
 
@@ -32,7 +32,7 @@ export default function TelaLogin() {
         <div className="tela-login">
             <form action="" className="frm-login">
                 <div className="circle">
-                    <FaUserCircle color='#fff' size='130px' />
+                    {IconUser}
                 </div>
                 <h2>Identificação</h2>
                 <div className="inputbox">
@@ -43,7 +43,7 @@ export default function TelaLogin() {
                     <input ref={inputTable} id='table-login' type="text" required />
                     <span>mesa</span>
                 </div>
-                <div>
+                <div className='button-login'>
                     <button onClick={handleCloseRegister}>Fechar</button>
                     <button onClick={handleRegistrarMesa}>Confirmar</button>
                 </div>

@@ -22,8 +22,8 @@ export default function CardComponent({card}: {card:CardComponentProps}) {
     function handleToggleFace(cardFace: string){
         const face2 = document.getElementById(card.alt)
         face2?.classList.remove('active')
-        const container = document.querySelector('.container')
-        face2?.removeChild
+        const container = document.querySelector('.ghostcard')
+        container?.appendChild(face2)
     }
 
     return (
@@ -48,6 +48,8 @@ export default function CardComponent({card}: {card:CardComponentProps}) {
                                 />
                     })}
                 </div>
+            </div>
+            <div className="ghostcard">
             </div>
         </div>
     )

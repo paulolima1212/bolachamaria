@@ -14,10 +14,11 @@ export default function Header() {
             setTelaLoginVisible
         }:any = useCardContext()
     
-    const activeClient = JSON.parse(localStorage.getItem('client') || '')
+    const activeClient = JSON.parse(localStorage.getItem('client'))
 
     function handleTelaPedido() {
         {activeClient.client ? setModalTelaPedido(!modalTelaPedido): setTelaLoginVisible(true)}
+        setShow(!show)
     }
 
     function setItems(){

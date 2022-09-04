@@ -6,8 +6,11 @@ import {api} from '../../services/api'
 
 import '../TelaPedido/styles.scss'
 import { IconTrash } from "../../assets/icons"
+import { useCardContext } from "../../Context/CardsContext"
 
 export default function TelaPedido() {
+
+    const {show,setShow, setModalTelaPedido}:any = useCardContext()
 
     let toPay = 0
     const activeClient:ClientProps = JSON.parse(localStorage.getItem('client'))
@@ -27,12 +30,17 @@ export default function TelaPedido() {
         console.log(id);
     }
 
+    function handleCloseTelaPedido(){
+        setModalTelaPedido(false)
+        setShow(!show)
+    }
 
     return (
         <div className="tela-pedido">
             <Header />
             <div className="main-pedido">
                 <h3 className="title-pedido">Pedido</h3>
+                <div className="close-tela-pedido" onClick={handleCloseTelaPedido}></div>
                 <div className="dados-client">
                     <span className="client">Cliente:</span>
                     <span className="name-client">{activeClient.client}</span>

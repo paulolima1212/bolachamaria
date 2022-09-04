@@ -36,6 +36,48 @@
         font-weight: 600;
     }
 
+    .close-tela-pedido
+    {
+        &::before
+        {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+            content: '';
+            width: 30px;
+            height: 3px;
+            background: #D5BC01;
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+
+        &::after
+        {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+            content: '';
+            width: 30px;
+            height: 3px;
+            background: #D5BC01;
+            transform: translateY(10px);
+            transition: 0.5s;
+            box-shadow: 0 -10px #D5BC01;
+        }
+
+
+        &::before
+        {
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        &::after
+        {
+            transform: translateY(0px) rotate(-45deg);
+            box-shadow: 0 0px #D5BC01;
+        }
+    }
+
 .drink-face2::after {
     content: "";
     position: absolute;
@@ -216,8 +258,7 @@
     }
 }
 
-@media (max-width: 420px),
-        (min-width:400px){
+@media (max-width: 420px){
     .tela-pedido
     {
         position: relative;
@@ -443,8 +484,7 @@
 
 }
 
-@media (max-width: 399px),
-        (min-width:320px) {
+@media (max-width: 399px){
     .tela-pedido
     {
         position: relative;

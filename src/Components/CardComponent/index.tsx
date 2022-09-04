@@ -16,14 +16,14 @@ export default function CardComponent({card}: {card:CardComponentProps}) {
         const face2 = document.getElementById(card.alt)
         face2?.classList.add('active')
         const faceAdd = document.getElementById(card.alt)
-        document.querySelector('.container')?.appendChild(faceAdd)
+        document.querySelector('.container')?.appendChild(faceAdd);
     }
 
     function handleToggleFace(cardFace: string){
         const face2 = document.getElementById(card.alt)
         face2?.classList.remove('active')
         const container = document.querySelector('.ghostcard')
-        container?.appendChild(face2)
+        container?.appendChild(face2);
     }
 
     return (

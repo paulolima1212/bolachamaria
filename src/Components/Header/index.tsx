@@ -1,4 +1,3 @@
-import { useCallback, useEffect, useState } from "react"
 import { IconCarOrder } from "../../assets/icons"
 import { useCardContext } from "../../Context/CardsContext"
 
@@ -15,7 +14,7 @@ export default function Header() {
             setTelaLoginVisible
         }:any = useCardContext()
     
-    const activeClient = JSON.parse(localStorage.getItem('client'))
+    const activeClient = JSON.parse(localStorage.getItem('client') || '')
 
     function handleTelaPedido() {
         {activeClient.client ? setModalTelaPedido(!modalTelaPedido): setTelaLoginVisible(true)}
@@ -44,7 +43,7 @@ export default function Header() {
     return (
         <div className="header">
             <div className="menutoggle" onClick={handleOpenMenu}></div>
-            <img src="../../assets/user.svg" alt="logo" className="logoimage"/>
+            <img src="https://ik.imagekit.io/plima1212/Bolacha_Maria/Assets/logo_WQCkWmHbJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662286519876" alt="logo" className="logoimage"/>
             <div className="cartorder" data-text={setItems()} onClick={handleTelaPedido}>
                 {IconCarOrder}
             </div>
